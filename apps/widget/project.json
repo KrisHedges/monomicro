@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/datalist/src",
+  "sourceRoot": "apps/widget/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,13 +9,13 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/datalist",
-        "index": "apps/datalist/src/index.html",
+        "outputPath": "dist/apps/widget",
+        "index": "apps/widget/src/index.html",
         "baseHref": "/",
-        "main": "apps/datalist/src/main.tsx",
-        "polyfills": "apps/datalist/src/polyfills.ts",
-        "tsConfig": "apps/datalist/tsconfig.app.json",
-        "assets": ["apps/datalist/src/favicon.ico", "apps/datalist/src/assets"],
+        "main": "apps/widget/src/main.tsx",
+        "polyfills": "apps/widget/src/polyfills.ts",
+        "tsConfig": "apps/widget/tsconfig.app.json",
+        "assets": ["apps/widget/src/favicon.ico", "apps/widget/src/assets"],
         "styles": [],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
@@ -30,8 +30,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/datalist/src/environments/environment.ts",
-              "with": "apps/datalist/src/environments/environment.prod.ts"
+              "replace": "apps/widget/src/environments/environment.ts",
+              "with": "apps/widget/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -47,16 +47,16 @@
       "executor": "@nrwl/webpack:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "datalist:build",
+        "buildTarget": "widget:build",
         "hmr": true,
-        "port": 3001
+        "port": 3000
       },
       "configurations": {
         "development": {
-          "buildTarget": "datalist:build:development"
+          "buildTarget": "widget:build:development"
         },
         "production": {
-          "buildTarget": "datalist:build:production",
+          "buildTarget": "widget:build:production",
           "hmr": false
         }
       }
@@ -65,14 +65,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/datalist/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/widget/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/datalist"],
+      "outputs": ["coverage/apps/widget"],
       "options": {
-        "jestConfig": "apps/datalist/jest.config.ts",
+        "jestConfig": "apps/widget/jest.config.ts",
         "passWithNoTests": true
       }
     }

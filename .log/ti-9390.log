@@ -1,0 +1,18 @@
+[13:59:29.172] Global cache location '/Users/krishedges/Library/Caches/typescript/4.8', safe file path '/opt/homebrew/lib/node_modules/typescript/lib/typingsafelist.json', types map path /opt/homebrew/lib/node_modules/typescript/lib/typesmap.json
+[13:59:29.173] Processing cache location '/Users/krishedges/Library/Caches/typescript/4.8'
+[13:59:29.175] Trying to find '/Users/krishedges/Library/Caches/typescript/4.8/package.json'...
+[13:59:29.175] Finished processing cache location '/Users/krishedges/Library/Caches/typescript/4.8'
+[13:59:29.176] Process id: 9391
+[13:59:29.176] NPM location: npm (explicit '--npmLocation' not  provided)
+[13:59:29.176] validateDefaultNpmLocation: true
+[13:59:29.176] Npm config file: /Users/krishedges/Library/Caches/typescript/4.8/package.json
+[13:59:29.176] Npm config file: '/Users/krishedges/Library/Caches/typescript/4.8/package.json' is missing, creating new one...
+[13:59:29.177] Updating types-registry npm package...
+[13:59:29.177] Exec: npm install --ignore-scripts types-registry@latest
+[13:59:30.155]     Succeeded. stdout:
+    
+    added 1 package, and audited 2 packages in 835ms
+
+found 0 vulnerabilities
+
+[13:59:30.155] Updated types-registry npm package

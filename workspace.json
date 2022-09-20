@@ -3,6 +3,9 @@
   "version": 2,
   "projects": {
     "datalist": "apps/datalist",
-    "datalist-e2e": "apps/datalist-e2e"
+    "datalist-e2e": "apps/datalist-e2e",
+    "ui": "libs/ui",
+    "widget": "apps/widget",
+    "widget-e2e": "apps/widget-e2e"
   }
 }
