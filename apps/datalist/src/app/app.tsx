@@ -1,6 +1,6 @@
 import { Theme, ThemeProvider } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Listitem } from '@monomicro/ui';
+import { Listitem, Button } from '@monomicro/ui';
 
 const StyledApp = styled.div`
   // Your style here
@@ -31,9 +31,18 @@ export function App(props: DataProps) {
         <h3>I'm an Application(DataList in apps)</h3>
         <span>Pass Me Data, {props.data.what}!?</span>
         <ul>
-          <Listitem theme={ theme }>
-            I'm a Component(Listitem) in the UI library
+          <Listitem>
+            I'm an "Unthemed" Component (Listitem) in the UI library
           </Listitem>
+          <Button>
+            I'm an "Unthemed" Component (Button) in the UI library
+          </Button>
+          <Listitem theme={theme}>
+            I'm an "Themed" Component (Listitem) in the UI library
+          </Listitem>
+          <Button theme={theme}>
+            I'm an "Themed" Component (Button) in the UI library
+          </Button>
         </ul>
       </StyledApp>
     </ThemeProvider>

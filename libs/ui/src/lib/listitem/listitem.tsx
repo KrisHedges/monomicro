@@ -4,18 +4,18 @@ import styled from '@emotion/styled';
 const StyledListitem = styled.li`
   // Component Style
   padding: 1em;
-  list-style: none;
+  list-style: circle;
   background-color: ${props => props.theme['colors'].primary};
   color: white;
+  font-size: 1.5em;
 `;
 
 const default_theme = {
   colors: {
-    primary: 'orange'
+    primary: 'blueviolet'
   }
 }
 
-/* eslint-disable-next-line */
 export interface ListitemProps {
   theme?: Theme,
   children: React.ReactNode
