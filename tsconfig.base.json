@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@monomicro/chakra-ui": ["libs/chakra-ui/src/index.ts"],
       "@monomicro/ui": ["libs/ui/src/index.ts"]
     }
   },

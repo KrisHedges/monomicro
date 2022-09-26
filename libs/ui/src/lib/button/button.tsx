@@ -5,10 +5,11 @@ import styled from "@emotion/styled";
 export const StyledButton = styled(MuiButton)`
   background-color: ${props => props.theme['colors'].primary};
   color: white;
-  padding: 0.5em;
+  padding: 0.5em 1.5em;
   margin: 0.5em 0;
   font-size: 1.8em;
-
+  border-radius: 2em;
+  border: 2px solid white;
 `
 const default_theme = {
   colors: {

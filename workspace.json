@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "chakra-ui": "libs/chakra-ui",
     "datalist": "apps/datalist",
     "datalist-e2e": "apps/datalist-e2e",
     "ui": "libs/ui",

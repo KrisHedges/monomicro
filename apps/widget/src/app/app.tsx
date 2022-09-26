@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { App as DataListApplication } from 'apps/datalist/src/app/app';
+import {ChakraButton} from '@monomicro/chakra-ui';
 
 const StyledApp = styled.div`
   // Your style here
@@ -22,6 +23,7 @@ export function App() {
         <div className="app-wrapper-5000">
           <DataListApplication data={ListData}/>
         </div>
+        <ChakraButton/>
       </StyledApp>
   );
 }
